@@ -1,7 +1,7 @@
 Name:           libtheora
 Epoch:          1
 Version:        1.1.1
-Release:        6%{?dist}
+Release:        8%{?dist}
 Summary:        Theora Video Compression Codec
 Group:          System Environment/Libraries
 License:        BSD
@@ -113,6 +113,12 @@ install -m 755 examples/.libs/png2theora $RPM_BUILD_ROOT/%{_bindir}/png2theora
 
 
 %changelog
+* Fri Jan 24 2014 Daniel Mach <dmach@redhat.com> - 1:1.1.1-8
+- Mass rebuild 2014-01-24
+
+* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 1:1.1.1-7
+- Mass rebuild 2013-12-27
+
 * Fri May  3 2013 Hans de Goede <hdegoede@redhat.com> - 1:1.1.1-6
 - run autoreconf for aarch64 support (#925898)
 - add a patch from upstream fixing a crash when compiled with gcc-4.8 (#959001)
